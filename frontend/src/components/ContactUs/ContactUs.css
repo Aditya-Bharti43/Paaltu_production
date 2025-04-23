@@ -1,0 +1,342 @@
+.contact-us-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-and-cat{
+    display: flex;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    justify-content: center;
+    background: #FFEEEC;
+    width: 100%;
+}
+
+.contact-heading{
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+}
+
+.contact-heading span{
+    color: #e3647c;
+    margin-left: 24%;
+}
+
+.divider-contact{
+    height: 2px; /* Thin line */
+    background-color: #e3647c; /* Divider color */
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 20px;
+}
+
+.contact-content{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.contact-extended-para{
+    margin-left: 20%;
+}
+
+.contact-cat{
+    margin-top: -5%;
+    margin-left: 10%;
+}
+
+.contact-cat-1{
+    height: 400px;
+    max-width: 100%;
+}
+
+.contact-credentials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -5%;
+    font-family: "Quicksand",sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-location, .contact-phone, .contact-mail{
+    width: 240px;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-location p, .contact-phone p, .contact-mail p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.phone-logo, .mail-logo, .location-logo{
+    height: 50px;
+    border-radius: 30%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+.phone-logo:hover, .mail-logo:hover{
+    border-radius: 30%;
+    padding: 15px;
+    background-color: #e3647c;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.location-logo:hover{
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #e3647c;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.join-and-user-credentials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-join-us-content{
+    font-family: "Quicksand",sans-serif;
+    max-width: 500px;
+}
+
+.contact-para-1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-para-2{
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.contact-para-2 span{
+    color: #e3647c;
+}
+
+.contact-para-3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-user-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+}
+
+.contact-name-field input,
+.contact-phone-field input,
+.contact-email-field input,
+.contact-message-field input {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-message-field input {
+    height: 120px;
+    resize: none;
+}
+
+.contact-call-button {
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px auto 0; 
+    cursor: pointer;
+    transition: all 0.1s ease;
+    border: none;
+}
+
+.contact-call-button:hover {
+    background-color: #e3647c;
+    width: 180px;
+    height: 45px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .contact-heading {
+        font-size: 46px;
+    }
+    
+    .contact-para-2 {
+        font-size: 46px;
+    }
+    
+    .contact-cat-1 {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-heading {
+        font-size: 40px;
+    }
+    
+    .contact-content {
+        font-size: 18px;
+    }
+    
+    .contact-cat-1 {
+        height: 300px;
+    }
+    
+    .contact-para-2 {
+        font-size: 40px;
+    }
+    
+    .contact-para-3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-and-cat {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-heading span {
+        margin-left: 0;
+    }
+    
+    .contact-extended-para {
+        margin-left: 0;
+    }
+    
+    .contact-cat {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    
+    .divider-contact {
+        margin: 20px auto;
+    }
+    
+    .contact-credentials {
+        margin-top: 30px;
+    }
+    
+    .contact-join-us-content {
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .join-and-user-credentials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact-heading {
+        font-size: 36px;
+    }
+    
+    .contact-cat-1 {
+        height: 250px;
+    }
+    
+    .contact-credentials {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-location, .contact-phone, .contact-mail {
+        width: 80%;
+        max-width: 240px;
+        margin: 10px 0;
+    }
+    
+    .contact-para-2 {
+        font-size: 36px;
+    }
+    
+    .contact-user-box {
+        padding: 15px;
+    }
+    
+    .contact-name-field input,
+    .contact-phone-field input,
+    .contact-email-field input,
+    .contact-message-field input {
+        font-size: 16px;
+    }
+    
+    .contact-call-button {
+        width: 180px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .contact-call-button:hover {
+        width: 170px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-heading {
+        font-size: 32px;
+    }
+    
+    .contact-content {
+        font-size: 16px;
+    }
+    
+    .contact-para-2 {
+        font-size: 32px;
+    }
+    
+    .contact-para-3 {
+        font-size: 16px;
+    }
+}

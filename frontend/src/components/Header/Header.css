@@ -1,0 +1,100 @@
+/* Keep existing styles */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.menu-title {
+  color: #e3647c;
+}
+
+/* Updated side menu styles */
+.side-menu {
+  font-family: "Quicksand";
+  background-color: #FFEEEC;
+  position: fixed;
+  top: 0;
+  right: 0; /* Align to the right side of the screen */
+  width: 300px;
+  height: 100vh;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show menu (when not closing) */
+.side-menu:not(.closing) {
+  transform: translateX(0%);
+}
+
+/* Hide menu when closing */
+.side-menu.closing {
+  transform: translateX(100%);
+}
+
+.side-menu-img {
+  height: 20%;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.side-menu-routes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 0; /* Ensure no padding that might cause bullets to appear */
+}
+
+/* Fix the structure of list items */
+.side-menu-routes li {
+  font-size: 32px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  list-style-type: none; /* Ensure no bullets */
+}
+
+.side-menu-routes li:hover {
+  color: #e3647c;
+}
+
+/* Style for connect message */
+.connect-message {
+  list-style-type: none; /* Remove bullet */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Optional: style for close button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Fix for Link elements containing li elements */
+.side-menu-routes a {
+  text-decoration: none;
+  color: inherit;
+}

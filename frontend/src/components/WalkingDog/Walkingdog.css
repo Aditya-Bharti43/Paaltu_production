@@ -1,0 +1,25 @@
+.dog-1 {
+    position: fixed; /* Anchors the dog to the viewport */
+    bottom: -12px; /* Adjust the vertical position (distance from the bottom of the screen) */
+    left: 0; /* Start at the left edge */
+    width: 100%; /* Full width of the screen */
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    height: 100px; /* Adjust based on your layout */
+    z-index: 1000; /* Ensures the dog stays on top of other elements */
+}
+
+.dog-1 img {
+    margin-top: 2%;
+    position: absolute;
+    height: 60px; /* Dog image size */
+    animation: walk 25s linear infinite; /* Animation: 25 seconds, linear speed, loops infinitely */
+}
+
+@keyframes walk {
+    0% {
+        left: -60px; /* Start off-screen on the left */
+    }
+    100% {
+        left: 100%; /* End off-screen on the right */
+    }
+}

@@ -1,0 +1,59 @@
+
+.logo_cont{
+    display: flex;
+    margin-top:5% ;
+    justify-content: center;
+  
+  }
+  
+  .fol_cont{
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+  }
+  
+  .insta_cont{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .era_det{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .privacy_cont{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .mad_with{
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 600px;
+  }
+
+  .hrt_img {
+    position: relative; /* Ensure it's positioned relative to the parent */
+    height: 90vh; /* Make the container take the full height of the screen */
+    display: flex; /* Center the content */
+    justify-content: center;
+    align-items: flex-end; /* Align the image to the bottom of the container */
+    overflow: hidden; /* Prevent overflow */
+    margin-top: -290px;
+  }
+  
+  .heart_img{
+    width: 1359.54px;
+    height: 674.88px;
+    margin-left: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+    transform: rotate(-8.9deg);
+  
+  }
+  

@@ -1,0 +1,25 @@
+.card3-main{
+    position: relative; /* Ensure relative positioning for child elements */
+    width: 100%; /* Full width container */
+    max-height: 60px; /* Restrict the height to match the image */
+}
+
+.card3-heading{
+    position: absolute; /* Allows positioning over the image */
+    top: 400%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    margin: 0; /* Remove any default margins */
+    color: white; /* Text color for visibility */
+    font-family: "Oswald", serif;
+    font-size: 38px; /* Adjust font size as needed */
+    font-weight: 400; /* Make the text bold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for contrast */
+    z-index: 2; 
+}
+
+.card3-main-image {
+    width: 100%; /* Cover full width of the container */
+    height: 500px; /* Fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio */
+}

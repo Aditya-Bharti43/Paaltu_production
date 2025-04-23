@@ -1,0 +1,149 @@
+.divider {
+    height: 2px; /* Thin line */
+    background-color: #e3647c; /* Divider color */
+    width: 600px; 
+    margin-top: 50px;
+  }
+
+  .about-main{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    /* background-color:#f8dbf85e ; */
+    background: #FFEEEC;
+  }
+
+  .about-us{
+    font-family: "Quicksand",sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    
+    
+  }
+
+  .bat-img_1{
+    height: 270px;
+    padding-left: 200px;
+  }
+
+  .pp-first-tx{
+    /* font-size: 42px; */
+    color: #e3647c;
+    font-weight: 600;
+    margin-left: 150px;
+  }
+  .second-txt{
+    font-family: "Quicksand",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 120px;
+    padding-top: 30px;
+    
+  }
+
+  .why-content{
+    font-size: 52px;
+    font-family: "Quicksand",sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .why-txt{
+    color: #e3647c;
+    font-weight: 600;
+
+  }
+
+  .why-paaltu{
+    /* margin-left: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-content-piku p{
+    margin-top: 20px;
+    line-height: 1.8;
+    font-family: "Quicksand",sans-serif;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+  }
+
+  .manage-txt{
+    font-weight: bold;
+  }
+
+  .piku-story{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+  }
+
+  .piku-img{
+    height: 450px;
+    margin-left: 15%;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  .piku-name{
+    font-weight: bold;
+  }
+  .pik-content{
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-right: 15%;
+    line-height: 1.8;
+    font-family: "Quicksand",sans-serif;
+    font-size: 20px;
+  }
+
+  .piku-title-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .what-and-how{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .pikku-image-2{
+    height: 500px;
+    width: 1200px;
+    margin-top: 110px;
+    border-radius: 20px;
+    margin-left: -70%;
+  }
+  
+
+.what-content{
+  font-family: "Quicksand",sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  margin-left: 19%;
+  margin-top: 2%;
+}
+
+.what-txt{
+  color: #e3647c;
+}
+
+.what-how-para{
+  margin-left: 19%;
+  font-family: "Quicksand",sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-right: 25%;
+}
+
+.piku-underline-txt{
+  text-decoration: underline;
+}

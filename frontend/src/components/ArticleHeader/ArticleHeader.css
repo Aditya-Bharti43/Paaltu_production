@@ -1,0 +1,99 @@
+.article-header-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Quicksand";
+    font-weight: 500;
+  
+    
+}
+
+.article-header-heading p{
+    font-size: 20px;
+    font-family: "Quicksand";
+    letter-spacing: 4pX;
+    margin-left: 45%;
+}
+
+.article-header-divider-content{
+    display: flex;
+    flex-direction: column;
+   /* margin-left: 120px;  */
+}
+
+.article-header-divider1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */
+    border: 0;
+    border-top: 1px dotted #ccc;
+   
+    width: 1020px; 
+     margin-top: 20px;
+     margin-left: 20%;
+}
+
+.article-header-content{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -1%;
+}
+
+.article-header-divider2{
+    border-top: 1px dotted #ccc;
+    width: 1020px; 
+    margin-left: 20%;
+   
+}
+
+.article-header-date{
+    margin-left: -50%;
+    margin-right: -50%;
+}
+
+.article-header-admin{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.article-header-admin img{
+    height: 20px;
+    border: 2px solid #e3647c;
+    border-radius: 50%;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+
+.article-header-date img{
+    height: 30px;
+   
+    border-radius: 50%;
+    margin-top: 20%;
+    /* margin-right: 20%; */
+
+}
+.article-header-date  p{
+    margin-top: 22%;
+}
+.article-header-date{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-header-comment img{
+    height: 30px;
+    
+    border-radius: 50%;
+    margin-top: 20%;
+    /* margin-right: 10%; */
+}
+.article-header-comment p{
+    margin-top: 22%;
+}
+.article-header-comment{
+    display: flex;
+    flex-direction: row;
+}
