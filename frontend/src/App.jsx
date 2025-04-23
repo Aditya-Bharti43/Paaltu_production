@@ -35,7 +35,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('http://localhost:4000/api/v1/user/register', formData)
+      const res = await axios.post('https://paaltu-production-2.onrender.com/api/v1/user/register', formData)
       alert("User added successfully!")
       console.log(res.data)
     } catch (error) {

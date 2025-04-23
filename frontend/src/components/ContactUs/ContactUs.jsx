@@ -28,7 +28,7 @@ function ContactUs() {
     try {
       console.log(formData);
       
-      const res = await axios.post('http://localhost:4000/api/v1/contactUs/contact', formData);
+      const res = await axios.post('https://paaltu-production-2.onrender.com/api/v1/contactUs/contact', formData);
       setResponseMsg("We'll call you back soon!");
     } catch (err) {
       console.error(err);

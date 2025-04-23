@@ -31,7 +31,7 @@ function ArticleFooter() {
 
   const fetchComments = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/v1/blog/getComments");
+      const res = await axios.get("https://paaltu-production-2.onrender.com/api/v1/blog/getComments");
       setComments(res.data.comments);
       return res.data.comments;
     } catch (err) {
@@ -71,7 +71,7 @@ function ArticleFooter() {
     setIsSubmitting(true);
     
     try {
-      const res = await axios.post("http://localhost:4000/api/v1/blog/comments", commentData);
+      const res = await axios.post("https://paaltu-production-2.onrender.com/api/v1/blog/comments", commentData);
       setResponseMsg("Comment posted successfully!");
       setCommentData({ username: "", email: "", website: "", comment: "" }); // Clear fields
       
