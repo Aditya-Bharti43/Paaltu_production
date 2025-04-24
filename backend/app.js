@@ -6,15 +6,20 @@ const app = express()
 
 const allowedOrigins = [
   'http://localhost:5173',  // Vite dev
-  'https://mypaaltu-production-1.vercel.app'  // Vercel prod
+  'https://mypaaltu-production-1.vercel.app',  // Vercel prod
+  'https://paaltu-production-4.onrender.com'
 ];
 
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || "https://paaltu-production-2.onrender.com",
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE"]
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
-
 
 app.use(express.json({limit:"16kb"}))
 
