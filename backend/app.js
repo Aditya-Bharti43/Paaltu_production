@@ -6,8 +6,8 @@ const app = express()
 
 const allowedOrigins = [
   'http://localhost:5173',  // Vite dev
-  'https://mypaaltu-production-1.vercel.app',  // Vercel prod
-  'https://paaltu-production-4.onrender.com'
+  'https://paaltu-production-e9uj.vercel.app',
+  // 'https://paaltu-production-4.onrender.com'
 ];
 
 app.use(cors({
