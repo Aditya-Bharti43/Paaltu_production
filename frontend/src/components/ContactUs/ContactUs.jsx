@@ -25,6 +25,40 @@ function ContactUs() {
   };
 
   const handleSubmit = async () => {
+    const {username,phone_no,email,message}=formData
+
+    const nameRegex = /^[A-Za-z\s]+$/;
+    const phoneRegex = /^\d{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    for(let i=0;i<username.length;i++)
+    {
+      if((username[i]>='a' && username[i]<='z') || (username[i]>='A' && username[i]<='Z'))
+      {
+        continue
+      }
+      else{
+        alert('Only characters are allowed in username')
+        return
+      }
+    }
+
+      for(let i=0;i<phone_no.length;i++)
+      {
+        if(!(phone_no[i]>=1 && phone_no[i]<=10))
+        {
+          alert('Invalid phone number')
+        }
+      }
+
+      // email validation 
+
+    if(!emailRegex.test(email))
+    {
+      alert('Invalid email address')
+      return
+    }
+
     try {
       console.log(formData);
       
