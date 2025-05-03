@@ -47,6 +47,7 @@ function App() {
     if(!nameRegex.test(username))
     {
       alert('Only characters are allowed in username')
+      return
     }
 
     // phone_no validation
@@ -54,6 +55,7 @@ function App() {
     if(!phoneRegex.test(phone_no))
     {
       alert('Invalid phone number must be of 10 digits')
+      return
     }
 
     // email validation
@@ -61,6 +63,7 @@ function App() {
     if(!emailRegex.test(email))
     {
       alert('Invalid email address')
+      return
     }
     try {
       const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/user/register`, formData)
